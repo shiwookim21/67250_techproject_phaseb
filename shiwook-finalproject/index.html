@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shiwoo Kim">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="./static/script.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+</head>
+    
+
+
+<body onload="addYear(); displayGreeting();"> <div class="container"> <header class="header"> <img id="logo" src="./static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        </header>
+
+        <nav class="nav_bar" id="myTopnav"> 
+            <a id="navselected" href="index.html">Home</a>
+            <a href="views/experience.html">Experience</a> 
+            <a href="views/buytickets.html"> Buy Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+         </nav>
+
+        <main class="main">
+    <h2>Mission Statement</h2>
+    <p>
+    MonoMuse is trying to weave technology and art.<span id="longIntro" style="display: none;"> The museum serves people who find innovation interesting by providing a space where digital creativity meets physical reality.</span>
+</p>
+
+<button id="readMore">Read More</button>
+<button id="readLess" style="display: none;">Read Less</button>
+
+<div id="map"></div>
+    <hr> <div class="cta-container">
+        <a href="views/buytickets.html" class="buy-now-btn">Buy Tickets Now</a>
+    </div>
+</main>
+        
+        <figure class="main_img">
+            <img id="museumpicture" src="./static/museum-interior.png" alt="Museum Interior">
+        </figure>
+
+        <footer class="footer"> <p><span id="copyYear"></span> © MonoMuse Museum</p>
+        </footer>
+
+    </div> 
+</body>
+</html>
