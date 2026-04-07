@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shiwoo Kim">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+</head>
+    
+
+<body onload="addYear()">
+    <header>
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a id="navselected" href="tickets.html">Buy Tickets</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+    </header>
+
+    <div class="main">
+        <table>
+            <tr>
+                <th>Ticket Type</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Adult</td>
+                <td>18 years or older. Free for under 18.</td>
+                <td> $15</td>
+            </tr>
+            <tr>
+                <td>Student</td>
+                <td>Student ID Required</td>
+                <td> $12.50</td>
+            </tr>
+            <tr>
+                <td>Member</td>
+                <td>Member ID Required</td>
+                <td>$10</td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <p> <span id="copyYear"></span>© MonoMuse Museum</p>
+    </footer>
+    
+</body>
+</html>
