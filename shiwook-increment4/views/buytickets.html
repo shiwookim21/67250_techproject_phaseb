@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shiwoo Kim">
+    <title>Buy Tickets - MonoMuse</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body onload="addYear(); ActiveNav();">
+    <div class="container">
+        
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        </header>
+
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="buytickets.html">Buy Tickets</a>
+        </nav>
+
+   <main class="main">
+    <h2>Reserve Your Experience</h2>
+    <p>Join us at MonoMuse to explore the intersection of digital and physical art.</p>
+
+    <h3>Admission Pricing</h3>
+    <table class="pricing-table">
+        <thead>
+            <tr>
+                <th>Ticket Type</th>
+                <th>Admission Fee</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>General Admission</td>
+                <td>$25.00</td>
+                <td>Standard adult entry.</td>
+            </tr>
+            <tr>
+                <td>Student Admission</td>
+                <td>$15.00</td>
+                <td>Requires valid student ID (or IS major enrollment!)</td>
+            </tr>
+            <tr>
+                <td>Museum Member</td>
+                <td>$0.00</td>
+                <td>Show member card at the door.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button id="revealFormBtn">Buy Now</button>
+
+    <form id="ticketForm" style="display: none; margin-top: 20px;">
+        <div class="form-group">
+            <label for="userName">Full Name:</label>
+            <input type="text" id="userName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ticketType">Select Ticket Type:</label>
+            <select id="ticketType">
+                <option value="general">General Admission ($25)</option>
+                <option value="student">Student Admission ($15)</option>
+            </select>
+        </div>
+
+        <input type="hidden" id="currentPage" value="Buy Tickets Page">
+        <button type="submit" id="submitBtn">Confirm Purchase</button>
+    </form>
+</main>
+
+        <figure class="main_img">
+            <img id="ticketImage" src="../static/museum-interior2.jpeg" alt="Exhibition Space">
+        </figure>
+
+        <footer class="footer">
+            <p><span id="copyYear"></span> © MonoMuse Museum</p>
+        </footer>
+
+    </div>
+</body>
+</html>
